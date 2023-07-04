@@ -1,5 +1,11 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
+
+// plugins {
+//     // Apply the java-library plugin to add support for Java Library
+//     id 'java-library'
+// }
+
 buildscript {
     
     repositories {

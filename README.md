@@ -405,7 +405,14 @@ Gradle also includes two properties files, located in your root project director
 
 - `local.properties`
 
-  Configures local environment properties for the build system, including the following:`ndk.dir` - Path to the NDK. This property has been deprecated. Any downloaded versions of the NDK are installed in the `ndk` directory within the Android SDK directory.`sdk.dir` - Path to the SDK.`cmake.dir` - Path to CMake.`ndk.symlinkdir` - In Android Studio 3.5 and higher, creates a symlink to the NDK that can be shorter than the installed NDK path.![image-20230705021457224](C:\Users\Mansi\AppData\Roaming\Typora\typora-user-images\image-20230705021457224.png)
+  Configures local environment properties for the build system, including the following:
+  `ndk.dir` - Path to the NDK. This property has been deprecated. Any downloaded versions of the NDK are installed in the `ndk` directory within the Android SDK directory.
+  `sdk.dir` - Path to the SDK.
+  `cmake.dir` - Path to CMake.
+  `ndk.symlinkdir` - In Android Studio 3.5 and higher, creates a symlink to the NDK that can be shorter than the installed NDK path.![image-20230705021457224]
+
+  ![image](https://github.com/Mannxxx/COVID-19-TRACKER/assets/107349957/ad13753a-41a7-4f26-9f93-42c3e68ff03b)
+
 
 ### Remap the NDK to a shorter path (Windows only)
 
@@ -439,7 +446,7 @@ Additional source set directories are optional, and Android Studio doesn't autom
 
   Create this source set to include code and resources only for a specific product flavor.
 
-  ![image-20230705021553790](C:\Users\Mansi\AppData\Roaming\Typora\typora-user-images\image-20230705021553790.png)
+![image](https://github.com/Mannxxx/COVID-19-TRACKER/assets/107349957/ce0c70de-5ffa-4a26-89fa-4f791eef0309)
 
 - `src/productFlavorBuildType/`
 
@@ -451,11 +458,13 @@ For example, to generate the "fullDebug" version of your app, the build system m
 - `src/debug/` (the build type source set)
 - `src/full/` (the product flavor source set)
 - `src/main/` (the main source set)
-- ![image-20230705021627860](C:\Users\Mansi\AppData\Roaming\Typora\typora-user-images\image-20230705021627860.png)
+- 
+![image](https://github.com/Mannxxx/COVID-19-TRACKER/assets/107349957/a3f8f1a7-651a-414c-9e6b-f44789fecbe8)
+
 
 If different source sets contain different versions of the same file, Gradle uses the following priority order when deciding which file to use. Source sets on the left override the files and settings of source sets to the right:
 
-![image-20230705021653458](C:\Users\Mansi\AppData\Roaming\Typora\typora-user-images\image-20230705021653458.png)
+![Uploading image.png…]()
 
 This allows Gradle to use files that are specific to the build variant you are trying to build while reusing activities, application logic, and resources that are common to other versions of your app.
 

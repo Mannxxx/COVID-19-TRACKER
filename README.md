@@ -10,7 +10,7 @@
 
 Learn more about it <a href= "https://www.javatpoint.com/gradle">here</a>. 
 
-# Gradle Build
+## Gradle Build
 
 The **Gradle build** is a process of creating a Gradle project. When we run a gradle command, it will look for a file called **build.gradle** in the current directory. This file is also called **the Gradle build script**. The build configuration, tasks, and plugins are described in this file. The build script describes a project and its tasks.
 
@@ -24,7 +24,7 @@ First, Open the command line and create a directory for the project and change d
 
 Let's create a demo directory.
 
-![image-20230704230357343](C:\Users\Mansi\AppData\Roaming\Typora\typora-user-images\image-20230704230357343.png)
+![image](https://github.com/Mannxxx/COVID-19-TRACKER/assets/107349957/da18ab42-733c-48a5-98d5-e94d222a2e68)
 
 **Step2: Initialize a Gradle project**
 
@@ -32,21 +32,25 @@ To generate a Gradle project, run the **gradle init** command. It will generate 
 
 When we run the gradle init command, it will ask for some basic requirements. First, it will ask the **type of project** that we want to create. It will give four options:
 
-![image-20230704231605021](C:\Users\Mansi\AppData\Roaming\Typora\typora-user-images\image-20230704231605021.png)
+![image](https://github.com/Mannxxx/COVID-19-TRACKER/assets/107349957/517f6015-7c1d-484a-9eee-86d6f03fff47)
+
 
 Select our requirements. Hence, we are just making a demo project so that we will select the basic option. To select basic option, press **1** and **Enter** key. Consider the below output:
 
 Next, it will ask for **DSL**. There are two options that are available for DSL:
 
-![image-20230704232001722](C:\Users\Mansi\AppData\Roaming\Typora\typora-user-images\image-20230704232001722.png)
+![image](https://github.com/Mannxxx/COVID-19-TRACKER/assets/107349957/f0be40a8-3f1b-42c8-941e-48e0936ba83a)
+
 
 Next, it will ask for the **project name**. Type the project name and press Enter key. It will take a while to build a project. After the successful execution of the project, we will get a message **BUILD SUCCESSFUL**.
 
-![image-20230704231915191](C:\Users\Mansi\AppData\Roaming\Typora\typora-user-images\image-20230704231915191.png)
+![image](https://github.com/Mannxxx/COVID-19-TRACKER/assets/107349957/8dd37a8c-4db5-4e97-a1f0-08881192141c)
+
 
 Now we have successfully created a Gradle project. Now, what will happen to our specified directory? Consider the below structure of the Gradle project.
 
-![image-20230704232032593](C:\Users\Mansi\AppData\Roaming\Typora\typora-user-images\image-20230704232032593.png)
+![image](https://github.com/Mannxxx/COVID-19-TRACKER/assets/107349957/64533f05-7ce9-437c-b685-482e82b89052)
+
 
 It is the default structure of a Gradle project. Gradle will generate the following things for us:
 
@@ -88,10 +92,7 @@ To view details about the build process, select **View > Tool Windows > Build** 
 1. **Sync tab:** Displays tasks that Gradle executes to sync with your project files. Similar to the **Build Output** tab, if you encounter a sync error, select elements in the tree to get more information about the error.
 
 2. Build Output tab:
-
-    
-
-   Displays the tasks that Gradle executes as a tree, where each node represents either a build phase or a group of task dependencies. If you receive build-time or compile-time errors, inspect the tree and select an element to read the error output, as shown in figure 2.
+Displays the tasks that Gradle executes as a tree, where each node represents either a build phase or a group of task dependencies. If you receive build-time or compile-time errors, inspect the tree and select an element to read the error output, as shown in figure 2.
 
    ![img](https://developer.android.com/static/studio/images/run/build_output_window_error-2x.png)**Figure 2.** Inspect the **Build Output** tab for error messages.
 
@@ -105,46 +106,22 @@ If your build variants use product flavors, Gradle also invokes tasks to build t
 
 If an error occurs during the build process, Gradle may recommend command-line options to help you resolve the issue, such as `--stacktrace` or `--debug`. To use command-line options with your build process:
 
-1. Open the
-
-    
-
-   Settings
-
-    
-
-   or
-
-    
-
-   Preferences
-
-    
-
-   dialog:
-
-   - On Windows or Linux, select **File** > **Settings** from the menu bar.
-   - On macOS, select **Android Studio** > **Preferences** from the menu bar.
-
+1. Open the Settings or Preferences dialog:
+ - On Windows or Linux, select **File** > **Settings** from the menu bar.
+ - On macOS, select **Android Studio** > **Preferences** from the menu bar.
 2. Navigate to **Build, Execution, Deployment** > **Compiler**.
-
 3. In the text field next to **Command-line Options**, enter your command-line options.
-
 4. Click **OK** to save and exit.
-
+   
 Gradle applies these command-line options the next time you try building your app.
-
-
 
 ## Build configuration files
 
 Creating custom build configurations requires you to make changes to one or more build configuration files or `build.gradle.kts` files. These plain-text files use Domain Specific Language (DSL) to describe and manipulate the build logic using [Kotlin script](https://kotlinlang.org/docs/command-line.html#run-scripts), which is a flavor of the Kotlin language. You can also use [Groovy](http://groovy-lang.org/), which is a dynamic language for the Java Virtual Machine (JVM), to configure your builds. Build scripts written in Groovy are called `build.gradle` files.
 
+You don't need to know Kotlin script or Groovy to start configuring your build, because the Android Gradle plugin introduces most of the DSL elements you need. 
 
-
-You don't need to know Kotlin script or Groovy to start configuring your build, because the Android Gradle plugin introduces most of the DSL elements you need. To learn more about the Android Gradle plugin DSL, read the [DSL reference documentation](https://developer.android.com/reference/tools/gradle-api). Kotlin script also relies on the [underlying Gradle Kotlin DSL](https://docs.gradle.org/current/userguide/kotlin_dsl.html#kotlin_dsl).
-
-
+To learn more about the Android Gradle plugin DSL, read the [DSL reference documentation](https://developer.android.com/reference/tools/gradle-api). Kotlin script also relies on the [underlying Gradle Kotlin DSL](https://docs.gradle.org/current/userguide/kotlin_dsl.html#kotlin_dsl).
 
 When starting a new project, Android Studio automatically creates some of these files for you and populates them based on sensible defaults. The project file structure has the following layout:
 

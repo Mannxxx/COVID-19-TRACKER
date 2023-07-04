@@ -1,6 +1,3 @@
-# Tracker-Covid-19
-<h1>Track the cases of Covid-19 on global level as well as on country level.</h1>
-
 # COVID-19-TRACKER
 
 ## Track the cases of Covid-19 on global level as well as on country level.</h1>

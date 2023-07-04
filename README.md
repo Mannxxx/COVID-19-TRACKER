@@ -462,12 +462,10 @@ This allows Gradle to use files that are specific to the build variant you are t
 When [merging multiple manifests](https://developer.android.com/studio/build/manage-manifests#merge-manifests), Gradle uses the same priority order so each build variant can define different components or permissions in the final manifest. To learn more about creating custom source sets, read [Create source sets](https://developer.android.com/studio/build/build-variants#sourcesets).
 
 
-
-<h2>Splash Screen</h2>
-<img src="https://github.com/Mannxxx/COVID-19-TRACKER/blob/main/screenshot/splash.jpeg"  width= "150" height= "300">
-<h2>Dashboard</h2>
-<img src="https://github.com/Mannxxx/COVID-19-TRACKER/blob/main/screenshot/dashboard%20(2).jpeg"  width= "150" height= "300">
-<h2>Distance from containment zone</h2>
-<img src="https://github.com/Mannxxx/COVID-19-TRACKER/blob/main/screenshot/info.jpeg"  width= "150" height= "300">
-<h2>News related to COVID-19</h2>
-<img src="https://github.com/Mannxxx/COVID-19-TRACKER/blob/main/screenshot/news.jpeg"  width= "150" height= "300">
+After successfully build, the apk will be created. On installing it, we'll get our covid tracker app!
+<div>
+    <img src="https://github.com/Mannxxx/COVID-19-TRACKER/blob/main/screenshot/splash.jpeg" alt="Splash Screen" width=20% >
+    <img src="https://github.com/Mannxxx/COVID-19-TRACKER/blob/main/screenshot/dashboard%20(2).jpeg" alt="Dashboard" width=20% >
+    <img src="https://github.com/Mannxxx/COVID-19-TRACKER/blob/main/screenshot/info.jpeg" alt="Distance from the containment zone" width=20% >
+    <img src="https://github.com/Mannxxx/COVID-19-TRACKER/blob/main/screenshot/news.jpeg" alt="News related to COVID-19" width=20% >
+</div>

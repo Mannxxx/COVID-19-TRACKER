@@ -1,13 +1,7 @@
-// This line applies the com.android.application plugin, which is required for building an Android application module.
 apply plugin: 'com.android.application'
 
 android {
-<<<<<<< HEAD
     compileSdkVersion 29
-=======
-    compileSdkVersion 29   <!--Specifies the version of the Android SDK to compile against.-->
-    buildToolsVersion "29.0.3"    <!--Specifies the version of the Android build tools to use.->
->>>>>>> 5bc5dbea1e1a3340505db752533709f3452a40b8
 
     defaultConfig {
         applicationId "com.example.trackercovid_19"
